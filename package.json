@@ -1,0 +1,23 @@
+{
+  "name": "load-testing-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aperkaz/load-testing-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aperkaz/load-testing-node/issues"
+  },
+  "homepage": "https://github.com/aperkaz/load-testing-node#readme",
+  "dependencies": {
+    "appdynamics": "^24.4.1",
+    "express": "^4.17.3"
+  }
+}
