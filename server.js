@@ -1,15 +1,14 @@
 require("appdynamics").profile({
-  controllerHostName: 'biker202404292357158.saas.appdynamics.com',
+  controllerHostName: "baseball202406100516177.saas.appdynamics.com",
   controllerPort: 443,
-  
   // If SSL, be sure to enable the next line
   controllerSslEnabled: true,
-  accountName: 'biker202404292357158',
-  accountAccessKey: '13wfx957hitd',
-  applicationName: 'appdynamics-app',
-  tierName: 'appdynamics-tier',
-  nodeName: 'process' // The controller will automatically append the node name with a unique number
- });
+  accountName: "baseball202406100516177",
+  accountAccessKey: "9sc7nfhk9mie",
+  applicationName: "ozoneapp",
+  tierName: "oneozone",
+  nodeName: "process", // The controller will automatically append the node name with a unique number
+});
 const express = require("express");
 const app = express();
 const port = 3000;
@@ -62,11 +61,11 @@ app.get("/", async (req, res) => {
   const result = withCache(fibonacci)(num);
   console.timeEnd(`fibonacci(${num})`);
 
-  res.status(200).send({ fib: result });
+  res.status(200).send({fib: result});
 });
 
 app.get("/error", async (req, res) => {
-  res.status(500).send({ error: "Internal server error" });
+  res.status(500).send({error: "Internal server error"});
 });
 
 app.listen(port, () => {
